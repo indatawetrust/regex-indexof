@@ -11,6 +11,8 @@ npm i regex-indexof --save
 ```js
 const regexIndexOf = require('regex-indexof')
 
+Array.prototype.indexOf = regexIndexOf
+
 console.log([1,2,3,4,5].indexOf(3))
 
 2
