@@ -13,7 +13,7 @@ const regexIndexOf = function(array, index) {
     })
     .filter(item => item != null)[0];
 
-  return array < 0 ? -1 : array;
+  return array != undefined ? (array < 0 ? -1 : array) : -1;
 };
 
 module.exports = regexIndexOf;
