@@ -1,0 +1,27 @@
+{
+  "name": "regex-indexof",
+  "version": "1.0.0",
+  "description": "Allows regex usage in indexOf function",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indatawetrust/regex-indexof.git"
+  },
+  "keywords": [
+    "regex",
+    "indexof",
+    "array"
+  ],
+  "author": "indatawetrust",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indatawetrust/regex-indexof/issues"
+  },
+  "homepage": "https://github.com/indatawetrust/regex-indexof#readme",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
