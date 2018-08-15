@@ -1,6 +1,6 @@
 {
   "name": "regex-indexof",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows regex usage in indexOf function",
   "main": "index.js",
   "scripts": {
