@@ -1,18 +1,19 @@
-const regexIndexOf = (array = [], index) => {
+const regexIndexOf = function(array, index) {
+  if (!index) {
+    index = array;
+    array = this;
+  }
+
   array = array
     .map((item, ind) => {
-      if ((item instanceof RegExp && item.test(index)) || item == index) {
+      if ((item instanceof RegExp && item.test(index)) || item === index) {
         return ind;
       }
       return null;
     })
-    .filter(item => item)[0];
+    .filter(item => item != null)[0];
 
-  return array || -1;
-};
-
-Array.prototype.indexOf = function(index) {
-  return regexIndexOf(this, index);
+  return array < 0 ? -1 : array;
 };
 
 module.exports = regexIndexOf;
